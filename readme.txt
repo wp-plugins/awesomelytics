@@ -3,14 +3,14 @@ Contributors: Awesomelytics
 Tags: analytics, web analytics, tracking, web tracking, seo
 Requires at least: 3.0.1
 Tested up to: 4.2.2
-Stable tag: 0.1.0
+Stable tag: 0.1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 Pulls in the required files for Awesomelytics cross-site real-time and historical web analytics for websites.
 
 == Description ==
-Awesomelytics provides standard web analytics features — view detailed visitor information in real time on a world map, analyze historical information on visits, record events, and so on — but what distinguishes Awesomelytics from other analytics platforms is cross-site analytics.
+[Awesomelytics](https://www.awesomelytics.com) provides standard web analytics features — view detailed visitor information in real time on a world map, analyze historical information on visits, record events, and so on — but what distinguishes Awesomelytics from other analytics platforms is cross-site analytics.
 
 If, say, you run Alice's Airplanes, Bob's Bicycles, and Charlie's Cars, then you can set up logic like this when someone visits Alice's Airplanes:
 
