@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Awesomelytics
-Version: 0.1.0
+Version: 0.1.2
 Plugin URI: https://www.awesomelytics.com
 Author: Joshua McGee
 Author URI: http://joshuamcgee.com
