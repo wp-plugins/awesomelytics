@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Awesomelytics
-Version: 0.1.3
+Version: 0.1.4
 Plugin URI: https://www.awesomelytics.com
 Author: Joshua McGee
 Author URI: http://joshuamcgee.com
@@ -19,7 +19,12 @@ function awesomelytics_management_page() {
 }
 add_action('admin_menu', 'awesomelytics_management_page');
 
-// ### Maybe ###
+function register_awesomelytics_admin_styles() {
+	wp_register_style( 'awesomelytics-admin-styles', plugins_url( 'awesomelytics/css/admin.css' ) );
+	wp_enqueue_style( 'awesomelytics-admin-styles' );
+}
+add_action( 'admin_enqueue_scripts', 'register_awesomelytics_admin_styles' );
+
 function add_awesomelytics_action_links ( $links ) {
   $settings_link = '<a href="' . admin_url( 'options-general.php?page=awesomelytics' ) . '">' . 'Settings' . '</a>';
   array_unshift( $links, $settings_link ); // before other links
@@ -28,10 +33,10 @@ function add_awesomelytics_action_links ( $links ) {
 add_filter( 'plugin_action_links', 'add_awesomelytics_action_links' );
 
 function awesomelytics_settings() {
-  echo '<div class="wrap">';
+  echo '<div class="wrap" id="awesomelytics-settings">';
   echo '<h2>Awesomelytics</h2>';
   echo '<p>';
-  echo '<a href="https://www.awesomelytics.com/join?domain=' . get_site_url() . '" target="_blank">Be sure to register your site at Awesomelytics!</a>';
+  echo '<a href="https://www.awesomelytics.com/join?domain=' . get_option( 'siteurl' ) . '&email=' . get_option( 'admin_email' ) . '" target="_blank">Activate your site at Awesomelytics</a>';
   echo '</p>';
   echo '</div>';
 }

@@ -3,7 +3,7 @@ Contributors: Awesomelytics
 Tags: analytics, web analytics, tracking, web tracking, seo
 Requires at least: 3.0.1
 Tested up to: 4.2.2
-Stable tag: 0.1.3
+Stable tag: 0.1.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -23,10 +23,8 @@ Or, if the visitor has entered their income information at any of the three site
 Or, you can prepopulate a registration form with their name and email gleaned from another of your sites.
 
 == Installation ==
-1. [Create an account at Awesomelytics](https://www.awesomelytics.com)
-1. Configure your site
-1. Upload the `awesomelytics` folder to the `/wp-content/plugins/` directory
-1. Activate the plugin through the 'Plugins' menu in WordPress
+1. Download and activate the plugin through the 'Plugins' menu in WordPress
+1. Click the activation link in the Awesomelytics 'Settings' menu in WordPress
 
 == Frequently Asked Questions ==
 
